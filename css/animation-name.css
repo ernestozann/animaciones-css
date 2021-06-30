@@ -1,6 +1,10 @@
 :root {
 	--shadow: 0 19px 38px rgba(0,0,0,0.30),
 	0 15px 12px rgba(0,0,0,0.22);
+	--sky: #CCEFFF;
+	--grass-shadow: #a6543d;
+	--walls: #bb6d50;
+	--grass: #6aa067;
 }
 body {
 	margin: 0;
@@ -19,7 +23,7 @@ body {
 	width: 60%;
 }
 .score {
-	color: #a6543d;
+	color: var(--grass-shadow);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	margin: 0;
@@ -31,7 +35,7 @@ body {
 	border-radius: 40px;
 	width: 300px;
 	height: 600px;
-	background: #CCEFFF;
+	background: var(--sky);
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .layer-1 {
@@ -104,7 +108,7 @@ input:checked {
 	right: 0;
 	bottom: 0;
 	margin: 0 auto;
-	background: #bb6d50;
+	background: var(--walls);
 }
 .layer-4 {
 	position: absolute;
@@ -127,7 +131,7 @@ input:checked {
 	height: 300px;
 	left: 0;
 	bottom: 0;
-	background: #bb6d50;
+	background: var(--walls);
 }
 .layer-6 {
 	position: absolute;
@@ -151,7 +155,7 @@ input:checked {
 	height: 200px;
 	right: 0;
 	bottom: 0;
-	background: #bb6d50;
+	background: var(--walls);
 	border-bottom-right-radius: 40px;
 }
 .layer-8 {
@@ -189,10 +193,10 @@ input:checked {
 	top: 0;
 	width: 100%;
 	height: 40px;
-	background: linear-gradient(135deg, #6aa067 25%, transparent 25%) -50px 0,
-              linear-gradient(-135deg, #6aa067 25%, transparent 25%) -50px 0,
-              linear-gradient(45deg, #6aa067 25%, transparent 25%),
-              linear-gradient(-45deg, #6aa067 25%, transparent 25%);
+	background: linear-gradient(135deg, var(--grass) 25%, transparent 25%) -50px 0,
+              linear-gradient(-135deg, var(--grass) 25%, transparent 25%) -50px 0,
+              linear-gradient(45deg, var(--grass) 25%, transparent 25%),
+              linear-gradient(-45deg, var(--grass) 25%, transparent 25%);
 	background-size: 40px 100px;
 	background-position: 140px 0 0 30px 0;
 	border-top-left-radius: 15px;
@@ -205,10 +209,10 @@ input:checked {
 	top: 15px;
 	width: 100%;
 	height: 40px;
-	background: linear-gradient(135deg, #a6543d 25%, transparent 25%) -50px 0,
-              linear-gradient(-135deg, #a6543d 25%, transparent 25%) -50px 0,
-              linear-gradient(45deg, #a6543d 25%, transparent 25%),
-              linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+	background: linear-gradient(135deg, var(--grass-shadow) 25%, transparent 25%) -50px 0,
+              linear-gradient(-135deg, var(--grass-shadow) 25%, transparent 25%) -50px 0,
+              linear-gradient(45deg, var(--grass-shadow) 25%, transparent 25%),
+              linear-gradient(-45deg, var(--grass-shadow) 25%, transparent 25%);
 	background-size: 40px 100px;
 	background-position: 140px 0 0 30px 0;
 	border-top-left-radius: 15px;
@@ -339,7 +343,7 @@ input:checked {
 }
 /*bush*/
 .left-bush {
-	background: #6aa067;
+	background: var(--grass);
 	border-radius: 40px 40px 0 0;
 	bottom: 0;
 	left: 0;
@@ -349,7 +353,7 @@ input:checked {
 	width: 80px;
 }
 .center-bush {
-	background: #6aa067;
+	background: var(--grass);
 	border-radius: 40px 40px 0 0;
 	bottom: 0;
 	left: 60px;
@@ -359,7 +363,7 @@ input:checked {
 	width: 80px;
 }
 .right-bush {
-	background: #6aa067;
+	background: var(--grass);
 	border-radius: 40px 40px 0 0;
 	bottom: 0;
 	left: 130px;
